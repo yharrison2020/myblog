@@ -1,5 +1,5 @@
-title:            Blog Title
-description:      Describe your website here.
+title:            Yvette's Coding Journey
+description:      Showcasing my learning in different programming languages and then using those skills to develop my portfolio.
 
 # put your disqus here
 disqus_shortname:
@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url: http://aronbordin.com/neo-hpstr-jekyll-theme
+url: http://localhost:4000
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -20,10 +20,15 @@ url: http://aronbordin.com/neo-hpstr-jekyll-theme
 menu:
   - title: 'Home'
     url: '/'
-  - title: 'Fork'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
-  - title: 'Install'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme#installation'
+  - title: 'Posts'
+    url: 'posts.html'
+  - title: 'Projects'
+    url: '#'
+    submenu:
+      - title: 'Minesweeper'
+        url: '/intro/minesweeper'
+      - title: 'Numpy'
+        url:  '/intro/numpy'
   - title: 'Tags'
     url: '/tags'
   - title: 'Categories'
@@ -39,10 +44,10 @@ menu:
 
 # Owner/author information
 owner:
-  name:           Your name
+  name:           Yvette Harrison
   site:           http://aronbordin.com
   avatar:         images/avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "I'm looking to increase my programming knowledge and to align my learning with some current industry best practices.  I'm currently learning Python alongside Git version control and Jekyll blogging/journalling."
   email:          you@email.com
   # Twitter nick for use in Twitter cards and follow button.
   twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
@@ -72,7 +77,7 @@ google_verify:
 bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/London
 locale:      en_US
 future:      true
 highlighter: rouge
@@ -82,7 +87,8 @@ sass:
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+#permalink:   /:categories/:title/
+permalink:   /:categories/:year/:month/:day/:title/
 
 # Amount of post to show on home page
 paginate: 5
@@ -100,7 +106,10 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
+
 include: [".htaccess"]
 exclude: ["demo/*", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 theme: neo-hpstr-jekyll-theme
+
+excerpt_separator: <!-- more -->
