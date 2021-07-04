@@ -1,2 +1,2 @@
 # myblog
-My Jekyll blog repo
+This is the repo for my blog site
