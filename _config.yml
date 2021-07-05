@@ -45,7 +45,7 @@ menu:
 # Owner/author information
 owner:
   name:           Yvette Harrison
-  site:           https://github.com/yharrison2020
+  site:           https://yharrison2020.github.io
   avatar:         images/avatar.jpg
   bio:            "I'm looking to increase my programming knowledge and to align my learning with some current industry best practices.  I'm currently learning Python alongside Git version control and Jekyll blogging/journalling."
   email:          you@email.com
@@ -61,7 +61,7 @@ twitter:
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
   - title: "github"
-    url: "https://github.com/yharrison2020"
+    url: "https://yharrison2020.github.io"
 #  - title: "linkedin"
 #    url: "https://br.linkedin.com/in/aronbordin"
 
@@ -92,7 +92,7 @@ permalink:   /:categories/:year/:month/:day/:title/
 # Amount of post to show on home page
 paginate: 5
 
-# if true, shows the floatting share buttons
+# if true, shows the floating share buttons
 float_share: true
 
 # Octopress
